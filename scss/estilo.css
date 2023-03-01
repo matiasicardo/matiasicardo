@@ -235,6 +235,18 @@ html {
 .curriculum .fila .item-izq p{
     line-height: 12px;
 }
+.curriculum button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #20262E;
+    width: fit-content;
+    display: block;
+    margin: auto;
+    padding: 2%;
+    font-size: 16px;
+    color: #20262e;
+}
+
 
 /* Contacto */
 
@@ -285,6 +297,41 @@ html {
     position: relative;
     z-index: 10;
 }
+/* footer*/
+footer{
+    background-color: #bbaa99;
+    color: #20262E;
+    padding: 2%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes img{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    filter: invert(77%) sepia(18%) saturate(837%) hue-rotate(180deg) brightness(99%) contrast(92%);
+    margin: 10px;
+    transition: .3s;
+}
+footer img:hover{
+    background-color: #a0a76a;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #20262E;
+    color: #a0a76a;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
 
 /* Responsive */
 @media screen and (max-width:980px){
@@ -312,6 +359,12 @@ html {
     .contenido-banner{
         display: block;
     }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
 }
 @media screen and (max-width:700px){
     .sobremi .fila .col{
@@ -326,11 +379,5 @@ html {
     }
     .curriculum .fila .col{
         width: 90%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
     }
 }
